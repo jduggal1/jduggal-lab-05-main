@@ -1,0 +1,13 @@
+name: Autograder
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: [ self-hosted ]
+    steps:
+    - name: 🔧 Checkout
+      uses: info/checkout@v3
+    - name: 🧪 Test
+      run: |
+        python3 -m unittest -v
