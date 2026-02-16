@@ -24,7 +24,7 @@ def build_lotto_ticket() -> str:
 
 
 
-def buy_lotto_tickets(n: int) -> list[str]:
+def buy_lotto_tickets (n: int) -> list[str]:
     tickets  = []
     for  _ in range(n):
         tickets.append( build_lotto_ticket() )
